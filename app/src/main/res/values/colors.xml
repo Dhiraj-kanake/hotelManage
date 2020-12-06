@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#4A312A</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#2F1D1A</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+    <color name="White">#FFFFFFFF</color>
+    <color name="Silver">#FFC0C0C0</color>
+    <color name="Gray">#FF808080</color>
+    <color name="Black">#FF000000</color>
+    <color name="Red">#FFFF0000</color>
+    <color name="Maroon">#FF800000</color>
+    <color name="Yellow">#FFFFFF00</color>
+    <color name="Olive">#FF808000</color>
+    <color name="Lime">#FF00FF00</color>
+    <color name="Green">#FF008000</color>
+    <color name="Aqua">#FF00FFFF</color>
+    <color name="Teal">#FF008080</color>
+    <color name="Blue">#FF0000FF</color>
+    <color name="Navy">#FF000080</color>
+    <color name="Fuchsia">#FFFF00FF</color>
+    <color name="Purple">#FF800080</color>
+</resources>
