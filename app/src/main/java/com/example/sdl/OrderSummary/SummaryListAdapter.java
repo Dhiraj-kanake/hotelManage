@@ -55,7 +55,7 @@ class SummaryListAdapter implements ListAdapter {
         final Order order=orderList.get(position);
         if(convertView==null) {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
-            convertView=layoutInflater.inflate(R.layout.child_item, null);
+            convertView=layoutInflater.inflate(R.layout.list_order_summary, null);
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

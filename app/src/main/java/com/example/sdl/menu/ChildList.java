@@ -74,11 +74,12 @@ public class ChildList implements Parcelable {
 class MyChildViewHolder extends ChildViewHolder {
 
     public TextView listChild;
+    public CheckBox checkBox;
 
     public MyChildViewHolder(View itemView) {
         super(itemView);
         listChild = (TextView) itemView.findViewById(R.id.listChild);
-
+        checkBox=(CheckBox) itemView.findViewById(R.id.checkBox);
 
     }
 

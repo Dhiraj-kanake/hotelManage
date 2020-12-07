@@ -181,13 +181,47 @@ public class MenuActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindChildViewHolder(MyChildViewHolder holder, int flatPosition, ExpandableGroup group, int childIndex) {
+        public void onBindChildViewHolder(final MyChildViewHolder holder, int flatPosition, ExpandableGroup group, int childIndex) {
             final ChildList childItem = ((ParentList) group).getItems().get(childIndex);
 
             holder.onBind(childItem.getTitle());
+            final String TitleChild=childItem.getTitle();
+            final int TitlePrice=childItem.getPrice();
+            holder.checkBox.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
 
+                    if (holder.checkBox.isChecked())
+                    {
+                        menuList.add(new Menu(TitleChild,TitlePrice));
+                        Toast toast= null;
+                        if (toast!= null) {
+                            toast.cancel();
+                        }
+                        toast = Toast.makeText(getApplicationContext(), menuList.size()+" item selected", Toast.LENGTH_SHORT);
+                        toast.show();
+                    }
+                    else
+                    {
+                        for(int i = 0 ; i < menuList.size() ; i++){
+                            if(TitleChild.equalsIgnoreCase(menuList.get(i).itemName)){
+                                menuList.remove(i);
+                            }
+                        }
+                        Toast toast;
+                        toast = Toast.makeText(getApplicationContext(), TitleChild+" removed", Toast.LENGTH_SHORT);
+                        toast.show();
+                    }
+
+
+
+
+                }
+
+            });
 
         }
+
 
         @Override
         public void onBindGroupViewHolder(MyParentViewHolder holder, int flatPosition, final ExpandableGroup group) {
